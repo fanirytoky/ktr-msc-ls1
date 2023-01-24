@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('Acceuil');
+})->middleware(['auth'])->name('dashboard');
+
+Route::get('/create.card',[Controller::class,'createCard'])->middleware(['auth'])->name('card.Create');
+Route::post('/store-card',[Controller::class,'storeCard'])->middleware(['auth'])->name('card.Store');
+Route::get('/list.card',[Controller::class,'getAllCardsById'])->middleware(['auth'])->name('card.list');
+
+
+require __DIR__.'/auth.php';
