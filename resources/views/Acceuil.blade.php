@@ -32,7 +32,7 @@
                         <p>Company Name: <b>{{$cards->companyName}}</b></p>
                         <p>Email: <b>{{$cards->emailAddress}}</b></p>
                         <p>Phone Number: <b>{{$cards->telephoneNumber}}</b></p>
-                        <p><button data-id="{{$cards->id}}" class="userinfo btn btn-success" data-toggle="modal" data-target="#modalForm">Share</button></p>
+                        <p><button data-id="{{$cards->id}}" class="userinfo btn btn-success" data-toggle="modal" data-target="#modalForm">Share <i class="fa fa-share"></i></button></p>
                     </div>
                 </div>
             </div>

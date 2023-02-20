@@ -20,9 +20,9 @@
     <div class="sidebar_blog_2">
         <h4>Menus</h4>
         <ul class="list-unstyled components">
-            <li><a href="{{route('card.list')}}"><i class="fa fa-file-text-o red_color"></i> <span>List of business cards</span></a></li>
+            <li><a href="{{route('card.list')}}"><i class="fa fa-credit-card red_color"></i> <span>List of business cards</span></a></li>
             <li><a href="{{route('card.Create')}}"><i class="fa fa-file-text-o green_color"></i> <span>Add new business cards</span></a></li>
-            <li><a href="{{route('card.Invitation')}}"><i class="fa fa-file-text-o yellow_color"></i> <span>Card invitation</span></a></li>
+            <li><a href="{{route('card.Invitation')}}"><i class="fa fa-group yellow_color"></i> <span>Card invitation</span></a></li>
         </ul>
     </div>
 </nav>
